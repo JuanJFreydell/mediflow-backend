@@ -16,7 +16,7 @@ const openai = new OpenAI({
 });
 
 // GET endpoint for OpenAI inference
-app.get('/openai_inference', async (req, res) => {
+app.post('/openai_inference', async (req, res) => {
   try {
     // Get the prompt from the request body
     const { prompt } = req.body;

@@ -23,7 +23,7 @@ app.get('/openai_inference', async (req, res) => {
     
     if (!prompt) {
       return res.status(400).json({ 
-        error: 'Prompt is required in the request body' 
+        error: 'Prompt is required in the request body ' 
       });
     }
 
